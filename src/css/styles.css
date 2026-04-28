@@ -1,0 +1,45 @@
+@import url(/src/css/hearder.css);
+@import url(/src/css/hero.css);
+@import url(/src/css/media.css);
+@import url(/src/css/about.css);
+@import url(/src/css/footer.css);
+@import url(/src/css/events.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+/*Colors */
+--primary: #9f0712;
+--primary-hover: #ff1f1f;
+--bg-dark: #0a0a0a;
+--bg-surface: #1a1a1a;
+--text-main: #ffffff;
+--text-muted: #a0a0a0;
+
+  /* Fonts */
+  --font-title: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Spacing / Sizes */
+  --header-height: 80px;
+  --max-width: 1200px;
+  --transition: all 0.3s ease;
+}
+
+/* 3. RESET  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}

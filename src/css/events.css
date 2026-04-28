@@ -1,0 +1,82 @@
+@import url(/src/css/styles.css);
+/* --- ESTILOS MÓVIL (Mobile First) --- */
+
+.events-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-table, 
+.events-table thead, 
+.events-table tbody, 
+.events-table th, 
+.events-table td, 
+.events-table tr { 
+    display: block; 
+}
+
+
+.events-table thead tr {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 1px;
+    left: 1px;
+}
+
+.events-table tr {
+    border: 1px solid #333;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #111;
+}
+
+.events-table td {
+    border: none;
+    position: relative;
+    padding-left: 50%; 
+    margin-bottom: 0.5rem;
+    text-align: right;
+}
+
+
+.events-table td::before {
+    content: attr(data-label); 
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    color: var(--primary-hover);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+
+.events-table button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.2rem;
+}
+
+/* --- VISTA DESKTOP (>768px) --- */
+@media (min-width: 768px) {
+    .events-table { display: table; }
+    .events-table thead { display: table-header-group; }
+    .events-table tbody { display: table-row-group; }
+    .events-table tr { display: table-row; border: none; }
+    .events-table th, .events-table td { 
+        display: table-cell; 
+        text-align: left;
+        padding: 1rem;
+        border-bottom: 1px solid #333;
+    }
+    
+    .events-table td::before { display: none; } 
+    .events-table td { padding-left: 1rem; text-align: left; }
+    .events-table button { width: auto; }
+}
