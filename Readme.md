@@ -23,10 +23,8 @@ LANDING-PAGE/
 │   ├── css/            # Modular styles
 │   │   ├── about.css
 │   │   ├── events.css
-│   │   ├── footer.css
 │   │   ├── header.css
 │   │   ├── hero.css
-│   │   ├── media.css
 │   │   └── styles.css  # Main import file
 │   └── js/
 │       └── script.js   # Hamburger menu logic
